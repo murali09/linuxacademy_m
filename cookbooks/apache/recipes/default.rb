@@ -6,8 +6,8 @@
 if node['platform_family'] == "rhel"
     package = "htppd"
 elseif  node['platform_family'] == "debian"
-end
     package = "apache2" 
+end
 package 'apache2' do
   package_name package 
  action :install
